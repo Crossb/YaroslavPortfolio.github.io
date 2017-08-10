@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul id="navigation">
+                <li class="current">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="services.html">Services</a>
+                </li>
+            </ul>
+
+        <div id="logo">
+            <a href="index.html"> <img src="img/logo.png" alt="LOGO"> </a>
+        </div>
+
+        </nav>
+    </header>
+<div class="clear"></div>
+
+<!--Slider-->
+<div class="slider-wrapper">
+    <img src="img/slide.jpg"/>
+</div>
+<!-- <div class="container"> -->
+        <section>
+            <div class="banner">
+                <div class="box-inner">
+                    <div class="banner-title">
+                        <img src="img/icon1.png" alt="">
+                        <div class="extra_wrapper">Fast&amp;
+                            <div class="color1">Safe</div>
+                        </div>
+                    </div>
+                    <p>Dorem ipsum dolor sit amet, consectetur adipiscinger elit. In mollis erat mattis neque facilisis, sit ameter ultricies erat rutrum. Cras facilisis, nulla vel viver auctor, leo magna sodales felis, quis malesuad</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="banner">
+                <div class="box-inner">
+                    <div class="banner-title">
+                        <img src="img/icon2.png" alt="">
+                        <div class="extra_wrapper">Fast&amp;
+                            <div class="color1">Safe</div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscinger elit. In mollis erat mattis neque facilisis, sit ameter ultricies erat rutrum. Cras facilisis, nulla vel viver auctor, leo magna sodales felis, quis malesuad</p>
+                    <!--<a href="#" class="fa fa-share-square"></a>-->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="banner">
+                <div class="box-inner">
+                    <div class="banner-title">
+                        <img src="img/icon3.png" alt="">
+                        <div class="extra_wrapper">Fast&amp;
+                            <div class="color1">Safe</div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscinger elit. In mollis erat mattis neque facilisis, sit ameter ultricies erat rutrum. Cras facilisis, nulla vel viver auctor, leo magna sodales felis, quis malesuad</p>
+                </div>
+            </div>
+        </section>
+        <div class="clear"></div>
+<!-- </div> -->
+
+<!--Phone-->
+<div class="c_phone">
+    <div class="text_number">
+        <p>+38 066 488 29 83</p>
+        <span>ORDER NOW!</span>
+    </div>
+</div>
+<div class="clear"></div>
+
+<!--BookingForm-->
+<!-- <div class="container"> -->
+    <div class="form-wrapper">
+        <h3>Booking Form</h3>
+        <form id="booking_form">
+
+            <div class="fl1">
+                <div class="controlHolder">
+                    <div class="tmInput">
+                    <input name="Name" placeholder="Name:" type="text" data-constraints="@NotEmpty @Required @AlphaSpecial" id="regula-generated-716363">
+                    </div>
+                </div>
+                <div class="controlHolder">
+                    <div class="tmInput">
+                    <input name="From" placeholder="From:" type="text" data-constraints="@NotEmpty @Required " id="regula-generated-369075">
+                    </div>
+                </div>
+            </div>
+            <div class="fl1">
+                <div class="controlHolder">
+                    <div class="tmInput">
+                    <input name="Email" placeholder="Email:" type="text" data-constraints="@NotEmpty @Required @Email" id="regula-generated-620671">
+                    </div>
+                </div>
+                <div class="controlHolder">
+                    <div class="tmInput mr0">
+                    <input name="To" placeholder="To:" type="text" data-constraints="@NotEmpty @Required" id="regula-generated-414466">
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <strong>Time</strong>
+            <div class="controlHolder">
+                <div class="tmInput">
+                <input name="Time" placeholder="" type="text" data-constraints="@NotEmpty @Required" id="regula-generated-221014">
+                </div>
+            </div>
+            <div class="clear"></div>
+            <strong>Date</strong>
+            <div class="controlHolder">
+                <label class="tmDatepicker">
+                <input type="text" name="Date" placeholder="20/05/2014" data-constraints="@NotEmpty @Required @Date" class="hasDatepicker">
+                </label>
+            </div>
+            <div class="clear"></div>
+            <div class="controlHolder">
+                <div class="tmRadio">
+                    <p>Comfort</p>
+                    <input name="Comfort" type="radio" id="tmRadio0" data-constraints="@RadioGroupChecked(name=&quot;Comfort&quot;, groups=[RadioGroup])" checked="" style="display: none;">
+                    <strong class="checked"></strong>
+                    <span>Cheap</span>
+                    <input name="Comfort" type="radio" id="tmRadio1" data-constraints="@RadioGroupChecked(name=&quot;Comfort&quot;, groups=[RadioGroup])" style="display: none;">
+                    <strong class="unchecked"></strong>
+                    <span>Standart</span>
+                    <input name="Comfort" type="radio" id="tmRadio2" data-constraints="@RadioGroupChecked(name=&quot;Comfort&quot;, groups=[RadioGroup])" style="display: none;"><strong class="unchecked"></strong>
+                    <span>Lux</span>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="controlHolder">
+                <div class="tmTextarea">
+                    <textarea name="Message" placeholder="Message" data-constraints="@NotEmpty @Required @Length(min=20,max=999999)" id="regula-generated-932250"></textarea>
+                </div>
+            </div>
+
+            <a href="#" class="btn" data-type="submit">Submit</a>
+        </form>
+    </div>
+      <div class="clear"></div>
+
+    <!--Car_list-->
+
+    <div class="carList">
+        <a href="#" class="type">
+            <!-- <img src="img/page1_img1.jpg" alt=""> -->
+            <!-- <span class="type_caption">Economy</span> -->
+        </a>
+        <a href="#" class="type">
+            <!-- <img src="img/page1_img2.jpg" alt=""> -->
+            <!-- <span class="type_caption">Standard</span> -->
+        </a>
+        <a href="#" class="type">
+            <!-- <img src="img/page1_img3.jpg" alt=""> -->
+            <!-- <span class="type_caption">Lux</span> -->
+        </a>
+    </div>
+
+<!-- </div> -->
+
+    <div class="clear"></div> 
+<!--footer-->
+<footer>
+        <section>
+            <h3>TourTaxi</h3>
+            <p><b>555-55-55</b><br><br>
+            Pryrychna 27<br>
+            crosskyiv@gmail.com</p>
+        </section>
+        <section>
+            <h3>Connect With Us!</h3>
+            <div class="socials">
+                <a href="#"><img src="img/twitter.png"></a>
+                <a href="#"><img src="img/facebook.png"></a>
+                <a href="#"><img src="img/googleplus.png"></a>
+           </div>
+        </section>
+        <section>
+            <span>Call Us:</span> + 1800 559 6580
+        </section>
+
+</footer>
+        <div class="clear"></div>
+
+
+</body>
+</html>
