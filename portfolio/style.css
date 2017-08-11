@@ -246,6 +246,7 @@ aside section{
 aside h2{
 	text-transform: uppercase;
   width: 150px;
+  margin-bottom: 1%;
 }
 .left-col{
     float: left;
@@ -269,7 +270,6 @@ aside h2{
 	font-weight: 800;
 	padding-top: 1%;
 }
-
 /*Skills*/
 #skills{
   font-family: calabri, sans-serif;
@@ -277,8 +277,8 @@ aside h2{
   margin: 0;
   padding: 0;
 }
-.container {
-  width: 90%;
+aside .container {
+  width: 100%;
   margin: 10px auto;
   text-transform: uppercase;
   text-align: center;
@@ -343,20 +343,46 @@ aside h2{
   color: #c4861f;
   font-size: 100%;
   font-weight: 700;
+  padding-bottom: 2%;
 }
-/*Media Aside/ My works*/
+/*Media Aside*/
 @media screen and (max-width: 1024px){
   aside{
     float: left;
     position: relative;
     text-align: center;
     width: 100%;
-    padding-top: 18%;
+    padding-top: 5%;
+  }
+  aside h3{
+    line-height: 110%;
+    margin-bottom: 3%;
+    text-align: left;
+  }
+  aside .left-col p{
+    text-align: left;
+  }
+  aside .container{
+    width: 100%;
+    margin: 10px auto 10%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  aside .container p{
+    float: left;
+    text-align: left;
+    width: 10%;
+  }
+  aside .container .skill-level{
+    float: right;
+    width: 68%;
+    padding-left: 8%;
+    border-left: 1px solid #fff;
   }
    .my_works{
     float: left;
     width: 100%;
-    margin: 0 0 25px;
+    margin: 0 0 3%;
     padding: 0;
     text-align: center;
   }
