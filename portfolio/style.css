@@ -47,7 +47,6 @@ padding-left: 0;
 }
 a:hover{
 	color: #c4861f;
-	/*text-decoration: underline;*/
 }
 section{
   display: block;
@@ -95,7 +94,6 @@ header .name p{
     font-size: 80%;
 
 }
-
 /*Navigation*/
 #menu-icon {
     display: hidden;
@@ -173,7 +171,6 @@ menu .icons{
     width: 100%;
     display: block;
     margin-bottom: 10%;
-    /*overflow: hidden;*/
 
 }
 .contacts ul li{
@@ -192,13 +189,6 @@ ul.social li img {
     width: 52px;
     padding: 10px 10px 10px 0;
 }
-
-
-
-
-
-
-
 
 /*Media Article*/
 @media screen and (max-width: 1024px){
@@ -235,10 +225,7 @@ ul.social li img {
 
   }
 }
-
-
 /*Aside*/
-
 aside{
 	background-color: #d5d5d5;
     float: right;
@@ -285,8 +272,6 @@ aside h2{
 
 /*Skills*/
 #skills{
-  /*background: black;*/
-  /*color: white;*/
   font-family: calabri, sans-serif;
   font-weight: 300;
   margin: 0;
@@ -359,7 +344,6 @@ aside h2{
   font-size: 100%;
   font-weight: 700;
 }
-
 /*Media Aside/ My works*/
 @media screen and (max-width: 1024px){
   aside{
@@ -383,8 +367,6 @@ aside h2{
     padding: 0;
     text-align: center;
   }
-
-
 }
 
 
