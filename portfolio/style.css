@@ -29,7 +29,7 @@ p{
 }
 img{
 	text-align: center;
-	max-width: 100%;
+	max-width: 98%;
 	height: auto;
 	width: auto;
 }
@@ -56,6 +56,13 @@ section{
     clear: both;
 }
 
+/*Media Global*/
+@media screen and (max-width: 1024px){
+  p{
+    font-size: 17px;
+  }
+}
+
 /*Header*/
 header {
     background: #1d1d1d;
@@ -71,10 +78,10 @@ header {
     float: left;
     text-align: center;
     width: 200px;
-    padding: 10px 0 0px 20px;
+    padding: 20px 0 0px 20px;
     margin-bottom: 5px;
     height: auto;
-    font-size: 130%;
+    font-size: 150%;
 }
 header a{
 	text-transform: uppercase;
@@ -91,7 +98,7 @@ header .name p{
     width: 195px;
     margin-bottom: 5px;
     height: auto;
-    font-size: 80%;
+    font-size: 90%;
 
 }
 /*Navigation*/
@@ -108,7 +115,7 @@ nav{
 nav ul li{
 	display: inline-block;
 	float: left;
-  padding: 10px 13px 10px;	
+  padding: 20px 13px 10px;	
 }
 
 /*Media Navigation*/
@@ -121,25 +128,24 @@ nav ul li{
         display: inline-block;
         padding-top: 25px;
     }
-    nav ul, nav:active ul{
-        display: none;
-        position: absolute;
-        padding: 20px;
-        background: #4d4e50;
-        border: 1px solid #fff;
-        right: 20px;
-        top: 60px;
-        width: 20%;
-        border-radius: 2px 0 2px 2px;
-        text-align: center;
+  nav ul, nav:active ul{
+      display: none;
+      position: absolute;
+      padding: 20px;
+      background: #4d4e50;
+      border: 1px solid #fff;
+      right: 20px;
+      top: 60px;
+      width: 25%;
+      border-radius: 2px 0 2px 2px;
+      text-align: center;
     }
     nav ul li {
-        display: inline-block;
-        float: left;
-        text-align: center;
-        font-size: 14pt;
-        width: 100%;
-        height: 35px;
+    font-size: 17pt;
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 8px 10px;
     }
     nav:hover ul{
         display: block;
@@ -158,8 +164,8 @@ figure{
     padding: 4% 3% 1% 2%;
     margin-bottom: 2%;
     width: 40%;
-    border-bottom: 1px solid #1d1d1d;
-    border-left: 1px solid #1d1d1d;
+    border-bottom: 1px solid #5c5c5c;
+    border-left: 1px solid #5c5c5c;
 }
 menu .icons{
 	display: inline-block;
@@ -338,12 +344,21 @@ aside .container {
   margin: 2% 0 2%;
   text-align: center;
 }
+.my_works img{
+  border: 2px solid #5c5c5c;
+}
 .my_works p{
   text-transform: uppercase;
   color: #c4861f;
-  font-size: 100%;
   font-weight: 700;
   padding-bottom: 2%;
+}
+.my_works span{
+  display: block;
+  font-style: italic;
+  color: grey;
+  font-size: 17px;
+  margin-bottom: 5px;
 }
 /*Media Aside*/
 @media screen and (max-width: 1024px){
@@ -388,8 +403,7 @@ aside .container {
   }
   .my_works img{
     float: left;
-    width: 100%;
-    margin: 0 0 25px;
+    width: 99%;
     padding: 0;
     text-align: center;
   }
