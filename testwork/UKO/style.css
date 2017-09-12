@@ -50,7 +50,7 @@ padding-left: 0;
 }
 section{
   display: block;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .clear {
     clear: both;
@@ -61,65 +61,97 @@ section{
     overflow: hidden;
 }
 
-/*Header*/
+
+/*Header BEM*/
 
 header {
     width: 100%;
-    height: 130px;
+    height: 100px;
     top: 0;
     left: 0;
-    /*margin-bottom: 20px;*/
 }
-.boxes{
-	text-align: center;
-	margin-bottom: 15px;
-	padding: 5px 0 15px;
-
-}
-.box_head{
+.nav{
     float: left;
-    width: 23%;
-    height: 100px;
+    width: 22%;
+    height: 65px;
     text-align: center;
     padding: 17px 10px 0px;
     border-right: 1px solid #d2d1d2;
+    margin-top: 1%;
 }
-
-.grade :last-child{
-	border-right: none;
-}
-
-.box_head h3{
+.nav_show{
 	display: inline-block;
-	text-align: right;
-	width: 50%;
-	margin: 20px 20px 0 0;
+	padding-top: 5px;
+}
 
+.nav__img_big-logo{
+	width: 130px;
+    margin: 5px 90px 0 0;
 }
-.list_icon{
+
+.nav__img_small-logo{
+	width: 20%;
+    margin: 5px 90px 0 0;
+}
+
+.nav p{
+	display: inline-block;
+    line-height: 150%;
+    padding-right: 15px;
+}
+
+.nav__p_p-contact{
+    width: 100%;
+    margin: 0 10px 0 2;
+    text-align: left;
+}
+
+.nav__p_p-pict{
+    text-align: right;
+    width: 75px;
+}
+
+.nav__img_head-pict{
 	float: right;
-	width: 30%;
-	/*margin: 15px 0 15px;*/
+	height: 55px;
 }
-.hand_made{
-	width: 40%;
+
+/******* Media Header ********/
+@media screen and (max-width: 1024px){
+header{
+	height: 55px;
 }
-.contacts{
-	text-align: left;
-	padding: 20px 0 0 20px;
+.nav_hiden{
+	display: none;
 }
+.nav{
+	border: none;
+}
+.nav_small-logo{
+	width: 110px;
+	}
+.nav_short{
+    width: 120px;
+    height: 50px;
+}
+}
+
 
 /***************/
 .showcase{
-    min-height: 605px;
     background: url(img/mainpict.jpg) no-repeat 0;
     text-align: center;
     color: #ffffff;
+	width: 100%;
+    min-height: auto;
+    /*margin-top: -1em;*/
 }
 .showcase h1 {
     margin-top: 105px;
     font-size: 55px;
     margin-bottom: 10px;
+    line-height: 135%;
+    margin: 0;
 }
 .showcase p {
     font-size: 20px;
@@ -130,14 +162,12 @@ header {
 	margin: 5px auto;
 	border-top: solid 1px #fff; 
 }
-
-/***************/
 .newsletter{
 	display: inline-block;
 	width: 80%;
 	background: #ee4646;
 	color: #fff;
-	margin-top: 130px;
+    margin: 130px 0 100px;
 	padding: 15px;
 }
 .newsletter h3{
@@ -146,14 +176,14 @@ header {
 	text-transform: uppercase;
 	color: #ee4646;
 	margin-bottom: 1%;
-	padding: 0 35px;
+	padding: 5px 35px
 }
 .inner_form{
 	display: inline-block;
 	width: 100%;
 	margin: 0 auto;
 }
-.form_comtrol{
+.form_control{
 	float: left;
 	display: inline-block;
 	width: 23%;
@@ -181,6 +211,33 @@ input{
     width: 100%;
     height: 43px;
 }
+
+/******* Media Showcase ********/
+
+@media screen and (max-width: 1024px){
+	.showcase h1{
+		font-size: 30px;
+		margin: 15px 0;
+	}
+	.newsletter{
+		margin: 35px 0 40px;
+	}
+	.form_control{
+	float: none;
+	display: inline-block;
+	width: 80%;
+	padding: 1%;
+}
+	.newsletter h3 {
+	    line-height: 20px;
+	    margin: 1% 0 5%;
+}
+	.newsletter{
+	    background: none;
+	}
+}
+
+
 /***************/
 .banner{
 	text-align: center;
@@ -194,8 +251,9 @@ input{
 	margin: 0 auto;
 	padding: 6%;
 }
-.banner h3{
+.banner p{
 	text-align: center;
+	letter-spacing: 1px;
 
 }
 .red_string {
@@ -204,8 +262,19 @@ input{
     margin: 5px auto;
     border-top: solid 1px #ee4646;
 }
+/******* Media Banner ********/
+@media screen and (max-width: 1024px){
 
-/***************/
+	.banner p{
+
+	}
+}
+
+
+/****** Bpxes Grade *********/
+.boxes-grade{
+	margin: 1% 0 1%;
+}
 .one_third{
 	position: relative;
     width: 33%;
@@ -227,8 +296,15 @@ input{
 	margin-bottom: 5%;
 }
 
-/*GOODS 1*/
-/***************/
+/******* Media BoxesGrade ********/
+@media screen and (max-width: 1024px){
+	.one_third{
+		width: 100%;
+		border: none;
+	}
+}
+
+/****** GOODS *********/
 .one_fourth li{
 	box-sizing: border-box;
 	position: relative;
@@ -236,7 +312,7 @@ input{
     width: 50%;
     text-align: center;
     margin: 0;
-    margin-top: -1em;
+    /*margin-top: -1em;*/
     padding: 0;
 }
 .one_fourth li{
@@ -293,6 +369,42 @@ input{
     border-top: solid 1px #ee4646;
 }
 
+/******* Media Goods ********/
+@media screen and (max-width: 1024px){
+
+.one_fourth li{
+	width: 100%;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    margin-top: -0.5em;
+}
+.one_fourth h3{
+    font-size: 135%;
+	padding: 1% 0 5%;
+}
+span.descr {
+    padding-top: 35px;
+}
+.button_2{
+	width: 10em;
+    height: 30px;
+    font-size: 14px;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    padding: 1px 1px;
+    margin-top: 55px;
+	margin-top: 5px;    
+}
+.short_string{
+	display: none;
+}
+.size {
+    margin: 5% 0;
+}
+.size .btn{
+    margin: 7% auto;
+}
+}
 
 /***************/
 .btn {
@@ -313,9 +425,17 @@ input{
 }
 
 /***************/
-.boxes h2{
+.boxes h2 {
 	text-transform: uppercase;
+	text-align: center;
 }
+.boxes p{
+	text-align: center;
+}
+.red_string{
+	margin: 15px auto;
+}
+
 .one_sixth{
 	display: block;
 	width: 16%;
@@ -336,7 +456,30 @@ input{
 }
 
 
-/**************/
+/******* Media Work ********/
+@media screen and (max-width: 1024px){
+.boxes h2 {
+    margin-top: 10%;
+}
+
+h2 {
+    font-size: 17px;
+    letter-spacing: 0.03em;
+}
+.one_sixth {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3% 0 3%;
+}
+.one_sixth p{
+    display: none;
+}
+}
+
+/****** Advantage ********/
+.advant{
+	margin-bottom: 5%;
+}
 .advant h4{
 	text-transform: uppercase;
 }
@@ -349,21 +492,33 @@ input{
     padding: 3% 0 3%;
 }
 .button_3{
-	box-sizing: border-box;
-	text-transform: uppercase;
+    display: block;
+    box-sizing: border-box;
+    text-transform: uppercase;
     color: #fff;
     background: #ee4646;
     margin-top: 2%;
     padding: 5px 12px;
+    margin: 0 auto;
     width: 17em;
     height: 43px;
 }
 
-/***************/
+/******* Media Advantage ********/
+@media screen and (max-width: 1024px){
+	.one_eigth {
+		width: 100%;
+	    margin: 0 auto;
+	    padding: 3% 0 3%;
+}
+
+}
+
+/******* Advertising ********/
 .advert{
-    min-height: 540px;
+    min-height: 490px;
     background: url(img/advert.jpg) no-repeat 0;
-    background-size: contain;
+    background-size: cover;
     text-align: center;
     color: #ffffff;
     margin: 0;
@@ -416,25 +571,48 @@ input{
 .presents h4{
 	padding: 5% 0 5%;
 }
-.presents .btn{
-	margin: 0 0 5%;
-}
+
+/****** Advertising *********/
+ @media screen and (max-width: 1024px){
+ 	.one_twice{
+ 		width: 100%;
+ 	}
+ 	.presents {
+	    text-align: center;
+	    width: 80%;
+	    height: 300px;
+	    border: solid 5px #ee4646;
+	    margin: 0 auto;
+	}
+	.advert h3{
+	    font-size: 17px;
+	    text-align: center;
+	    margin-bottom: 5%;
+	}
+	.presents p{
+		margin: 0 auto;
+	}
+
+	.presents .btn{
+		margin: 20px auto;
+	}
+	.presents h4 {
+	    padding: 20% 0 5%;
+	}
+ }
 
 /***************/
- 
-
 .red{
     font-size: 300%;
     font-weight: 500;
     color: #ee4646;
 }
 
-/***************/
+/****** Order *********/
 .order{
     background: url(img/orderbg.jpg) no-repeat 0;
     min-height: 20em;
-    margin-top: -1em;
-
+    /*margin-top: -1em;*/
 }
 .order h2{
 	display: inline-block;
@@ -459,8 +637,21 @@ input{
     height: 43px;
     border: solid 1px #ee4646;
 }
+/****** Media Order *********/
+ @media screen and (max-width: 1024px){
+ 	.order{
+ 		margin-bottom: 3%;
+}
+ 	.order h2{
+ 		letter-spacing: 4px;
+ 		margin-top: 7%;
+}
+ 	.order .button_4{
+   		margin-bottom: 5%;
+}
+}
 
-/***************/
+/****** Our Clients *********/
 .wrap{
 	border: solid 7px #f6f6f6;
 	width: 99%;
@@ -470,7 +661,7 @@ input{
 }
 .one_fifth{
 	display: block;
-	width: 20%;
+	width: 25%;
     float: left;
     text-align: center;
     margin: 0 auto;
@@ -484,7 +675,21 @@ input{
 	border-right: solid 1px #dadada;
 }
 
-/***************/
+/****** Media Client *********/
+ @media screen and (max-width: 1024px){
+ 	.wrap{
+ 		border: none;
+ 	}
+ 	.one_fifth{
+ 		width: 50%;
+ 		border: none;
+	}
+	.one_fifth h3 {
+		border-right: none;
+	}
+ }
+
+/*******  Rewiews ********/
 .review{
 	background-color: #f5f5f5;
 }
@@ -506,8 +711,19 @@ input{
 	margin-bottom: 3%;
 }
 
+/****** Media  Rewiews *********/
+ @media screen and (max-width: 1024px){
+ 	.review .button_4 {
+    margin-bottom: 10%;
+}
+ }
 
-/***************/
+/****** Questions *********/
+.questions{
+    background: url(img/desk.jpg) no-repeat 0;
+    min-height: 300px;
+    margin-top: -1em;
+}
 .questions h2{
 	color: #fff;
 }
@@ -515,7 +731,7 @@ input{
 	text-align: center;
     text-transform: uppercase;
     color: #fff;
-    padding: 1% 0 1%;
+    padding: 11px 13px 1px 0;
 }
 .questions h4{
 	text-align: center;
@@ -526,19 +742,67 @@ input{
     padding: 5px;
     margin: 2% auto;
 }
-.questions{
-    background: url(img/desk.jpg) no-repeat 0;
-    min-height: 220px;
-    margin-top: -1em;
-}
 .questions section{
     float: left;
     text-align: center;
     width: 30%;
     margin: 2% 2%;
 }
+	.call-me{
+	    width: 35%;
+	    height: 70px;
+	    margin-top: 2%;
+	    display: inline-block;
+}
+	.call-me p{
+		float: left;
+		display: inline-block;
+	    font-size: 160%;
+		font-weight: 600;
+	}
+	.call-me .button_3{
+		float: right;
+		display: inline-block;
+		width: 155px;
+		height: 35px;
+}
 
-/***************/
+
+
+
+/****** Media  Questions *********/
+ @media screen and (max-width: 1024px){
+ 	.questions h4{
+ 		width: 65%;
+	    margin: 10% auto;
+ 	}
+ 	.questions h2{
+ 		margin-top: 16%;
+ 	}
+ 	.call-me{
+		width: 300px;
+		height: 130px;
+		margin-top: 1%;
+	}
+	.call-me p{
+		float: left;
+		display: inline-block;
+	  	font-size: 115%;
+	    font-weight: 500;
+	    width: 100%;
+        padding-bottom: 10px;
+	}
+	.call-me .button_3{
+		float: none;
+		display: inline-block;
+		width: 150px;
+		margin: 0 auto;
+	    padding: 5px 12px 5px;
+	}
+
+ }
+
+/****** Map *********/
 
 .map{
 	margin-top: -1em;
@@ -576,7 +840,9 @@ input{
 	-webkit-transition: all .5s;
 	-o-transition: all .5s;
 	-transition: all .5s;
-
+}
+.descr p{
+	text-align: left;
 }
 .ones li:hover .descr{
 	opacity: 1;
@@ -608,20 +874,69 @@ input{
 }
 
 
-/***************/
-footer{
-	background-color: #fff;
-	width: 100%;
-	height: 100px;
-    padding-bottom: 3%;
+
+/****** Media  Map *********/
+ @media screen and (max-width: 1024px){
+.desk {
+    width: 100%;
+
 }
-footer .left{
+.inner_desk{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    top: 18px;
+    left: 70px;
+    width: 80%;
+    height: auto;
+}
+span.descr {
+    padding-top: 15px;
+}
+}
+
+
+/******* Footer  ********/
+
+footer .nav_hiden{
+	display: none;
+}
+footer .nav_left{
 	float: left;
-	border: none;
-	margin-left: 10%;
+	width: 180px;
 }
-footer .right{
+footer .nav_right{
 	float: right;
-	border: none;	
-	margin-right: 10%;
 }
+footer .nav_border-nul{
+	border: none;
+}
+
+/****** Media Footer *******/
+ @media screen and (max-width: 1024px){
+ 	footer .nav_logo-hiden{
+	display: none;
+	}
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
