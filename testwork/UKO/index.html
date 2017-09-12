@@ -9,49 +9,51 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-<header>
-	<section class="boxes">
-		<div class="container">
-			<div class="box_head">
-				<img src="img/logo.png">
-			</div>		
-			<div class="box_head">
-				<div class="contacts">
-					<p><i class="fa fa-phone" aria-hidden="true"></i> &nbsp0 (44) 501-69-15</p>	
-					<p><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp0 ukrodyag@ukrodyag.com</p>
-				</div>
-			</div>
-			<div class="box_head">
-				<h3>Виробництво сертифіковано</h3>
-	            <img class="list_icon" src="img/iso.png" width="70" height="70" >
-            </div>
-			<div class="box_head">
-				<h3>Вироблено руками українських жінок</h3>
-	            <img class="list_icon hand_made" src="img/made.png" width="99" height="57" >
-            </div>
-	<div class="clear"></div>
-	</section>
+<!-- <div class="top_logo"><img src="logo.png"></div> -->
+
+<!-- ******************** -->
+<!-- Header BEM -->
+
+<header class="nav_hiden">
+	<div class="container">
+		<div class="nav nav_show nav_short">
+				<img class="nav__img_big-logo nav_small-logo" src="img/logo.png">
+		</div>
+		<div class="nav nav_show nav_hiden">
+				<p class="nav__p_p-contact"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp0 (44) 501-69-15</p>	
+				<p class="nav__p_p-contact"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp0 ukrodyag@ukrodyag.com</p>
+		</div>
+		<div class="nav nav_show nav_hiden">
+				<p class="nav__p_p-pict">Виробництво сертифіковано</p>
+	            <img class="nav__img_head-pict" src="img/iso.png" width="70" height="70" >
+		</div>
+		<div class="nav nav_show nav_hiden">
+				<p class="nav__p_p-pict">Вироблено руками українських жінок</p>
+	            <img class="nav__img_head-pict" src="img/made.png" width="99" height="57" >				
+		</div>
+	</div>
 </header>
+
 
     <section class="showcase">
       <div class="container">
-        <h1>Швейная фабрика повного циклу</h1>
+        <h1>Швейная фабрика полного цикла</h1>
         <p>от разработки модели до производства брендированной продукции</p>
         <div class="white_string"></div>
 	    <section class="newsletter">
 	        <h3>Получите новый каталог</h3>
 	        <form>
 	        	<div class="inner_form">
-			        <div class="form_comtrol">
+			        <div class="form_control">
 			        	<input type="email" placeholder="ваше имя">
 			        </div>
-			        <div class="form_comtrol">
+			        <div class="form_control">
 			        	<input type="email" placeholder="ваш телефон">
 			        </div>
-			        <div class="form_comtrol">
+			        <div class="form_control">
 			        	<input type="email" placeholder="e-mail...">
 			        </div>
-			        <div class="form_comtrol">
+			        <div class="form_control">
 			        	<button type="submit" class="button_1">получить</button>
 			        </div>
 	        	</div>
@@ -64,16 +66,16 @@
     <section class="banner">
     	<div class="container">
     		<div class="inner_banner">
-	    		<h3>Компания «УКРАЇНСЬКИЙ КОРПОРАТИВНИЙ ОДЯГ» производит брендированную одежду
+	    		<p>Компания «УКРАЇНСЬКИЙ КОРПОРАТИВНИЙ ОДЯГ» производит брендированную одежду
 для ведущих украинских и зарубежных компаний, которая предназначена для сотрудников на 
 производстве, в офисе, при проведении промо-акций, а также рекламно-сувенирную продукцию.
-Мы не просто одеваем людей – мы рекламируем бренды!</h3>
+Мы не просто одеваем людей – мы рекламируем бренды!</p>
     	<div class="red_string"></div>   			
     		</div>
     	</div>
     </section>			
 
-    <section class="boxes grade">
+    <section class="boxes-grade">
     	<div class="container">
 		    	<div class="one_third">
 		    		<div class="inner_block">
@@ -141,6 +143,7 @@
     </section>
   <div class="clear"></div>
 
+<!-- WORK process -->
     <section class="boxes work">
     	<div class="container">
 	    	<h2>как мы работаем?</h2>
@@ -192,6 +195,7 @@
     </section>
   <div class="clear"></div>
 
+<!-- Advantage -->
   	<section class="boxes advant">
   		<div class="container">
   			<h2>преимущество работы с уко</h2>
@@ -204,51 +208,53 @@
 	        </div>
 	        <div class="one_eigth">
 	    		<div class="inner_block">
-	    			<img src="img/advant1.png">
-	    			<h4>Работа с персональным менеджером</h4>
+	    			<img src="img/advant2.png">
+	    			<h4>Бесплатная презентация образцов изделий у вас в офисе</h4>
 	    		</div>	        	
 	        </div>	        
 	        <div class="one_eigth">
 	    		<div class="inner_block">
-	    			<img src="img/advant1.png">
+	    			<img src="img/advant3.png">
+	    			<h4>Наличие шоу-рума</h4>
+	    		</div>	        	
+	        </div>
+	        <div class="one_eigth">
+	    		<div class="inner_block">
+	    			<img src="img/advant4.png">
 	    			<h4>Работа с персональным менеджером</h4>
 	    		</div>	        	
 	        </div>
 	        <div class="one_eigth">
 	    		<div class="inner_block">
-	    			<img src="img/advant1.png">
+	    			<img src="img/advant5.png">
 	    			<h4>Работа с персональным менеджером</h4>
 	    		</div>	        	
 	        </div>
 	        <div class="one_eigth">
 	    		<div class="inner_block">
-	    			<img src="img/advant1.png">
+	    			<img src="img/advant6.png">
 	    			<h4>Работа с персональным менеджером</h4>
 	    		</div>	        	
 	        </div>
 	        <div class="one_eigth">
 	    		<div class="inner_block">
-	    			<img src="img/advant1.png">
+	    			<img src="img/advant7.png">
 	    			<h4>Работа с персональным менеджером</h4>
 	    		</div>	        	
 	        </div>
 	        <div class="one_eigth">
 	    		<div class="inner_block">
-	    			<img src="img/advant1.png">
+	    			<img src="img/advant8.png">
 	    			<h4>Работа с персональным менеджером</h4>
 	    		</div>	        	
 	        </div>
-	        <div class="one_eigth">
-	    		<div class="inner_block">
-	    			<img src="img/advant1.png">
-	    			<h4>Работа с персональным менеджером</h4>
-	    		</div>	        	
-	        </div>
+
 	        <button type="submit" class="button_3">начать сотрудничество</button>	
   		</div>
   	</section>
   <div class="clear"></div>
 
+<!-- Advertising -->
   	<section class="banner advert ">
   		<div class="container">
   			<div class="one_twice">
@@ -284,15 +290,15 @@
 
 			<div class="one_third ">
 	    		<div class="product_block">
-	    				<span class="number red">230</span>
-	    				<p>Более 230 специалистов</p>
+	    				<span class="number red">1000</span>
+	    				<p>Более 1000 компаний работают с нами</p>
 		    	</div> 
     			<img src="img/product2.png">
 	    	</div>
 			<div class="one_third ">
 	    		<div class="product_block">
-	    				<span class="number red">230</span>
-	    				<p>Более 230 специалистов</p>
+	    				<span class="number red">1000&nbsp000</span>
+	    				<p>Более 1000000 изделий было  изготовленно на протяжении 2016 г.</p>
 		    	</div> 
     			<img src="img/product3.png">
 	    	</div>	    	
@@ -329,9 +335,9 @@
 			        <div class="one_fifth">
 				    		<h3>logo</h3>
 			    	</div>
-			        <div class="one_fifth">
+<!-- 			        <div class="one_fifth">
 				    		<h3>logo</h3>
-			    	</div>		        			        	
+			    	</div>	   -->   			        	
 		        </div>
 		    </div>
 	</section>
@@ -359,9 +365,15 @@
 				<h2>у вас остались вопросы ?</h2>
 				<p>Наш менеджер с удовольствием ответит на них.</p>
 	        	<div class="white_string"></div>
-	        	<h4>Оставьте заявку или позвоните по телефону</h4>  		
+	        	<h4>Оставьте заявку или позвоните по телефону</h4>  
+	        	<div class="call-me">
+	        		<p>0 (44) 501-69-15</p>
+	        		<button type="submit" class="button_3">оставить заявку</button>
+	        	</div>		
 	        </div>	
 		</section>
+		<div class="clear"></div>
+
 
 <!-- Map1 -->
 		<section class="banner map">
@@ -384,15 +396,23 @@
 			</div>				
 	  	</section>
 
-		<footer>
-			<div class="box_head left">
-				<h3>Виробництво сертифіковано</h3>
-	            <img class="list_icon" src="img/iso.png" width="70" height="70">
-            </div>
-            <div class="box_head right">
-				<img src="img/logo.png">
-			</div>
-		</footer>
+	  	<footer>
+				<div class="nav nav_show nav_short nav_right nav_border-nul">
+					<img class="nav__img_big-logo nav_small-logo " src="img/logo.png">
+				</div>
+				<div class="nav nav_hiden">
+					<p class="nav__p_p-contact"><i class="fa fa-phone" aria-hidden="true"></i> &nbsp0 (44) 501-69-15</p>	
+					<p class="nav__p_p-contact"><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp0 ukrodyag@ukrodyag.com</p>
+				</div>
+				<div class="nav nav_show nav_left nav_border-nul">
+					<p class="nav__p_p-pict">Виробництво сертифіковано</p>
+					<img class="nav__img_head-pict" src="img/iso.png" width="70" height="70" >
+				</div>
+				<div class="nav nav_hiden ">
+					<p class="nav__p_p-pict">Вироблено руками українських жінок</p>
+					<img class="nav__img_head-pict" src="img/made.png" width="99" height="57" >				
+				</div>
+	  	</footer>
 
 </body>  
 </html>	
